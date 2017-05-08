@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "./node_modules/.bin/webpack.cmd --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
