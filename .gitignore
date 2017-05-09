@@ -1,4 +1,4 @@
-.vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -62,6 +62,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# webpack compiled output
-dist/
