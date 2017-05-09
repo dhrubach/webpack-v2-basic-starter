@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack.cmd --colors",
     "watch": "./node_modules/.bin/webpack.cmd --watch",
     "dev-server": "./node_modules/.bin/webpack-dev-server.cmd --debug --config ./webpack.config.js --watch --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "production": "cross-env NODE_ENV=production && npm run build"
   },
   "keywords": [
     "webpack"
@@ -17,11 +18,14 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
+    "cross-env": "^4.0.0",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "node-sass": "^4.5.2",
+    "optimize-css-assets-webpack-plugin": "^1.3.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.17.0",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   }
