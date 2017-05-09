@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "./node_modules/.bin/webpack.cmd --watch",
+    "dev-server": "./node_modules/.bin/webpack-dev-server.cmd --debug --config ./webpack.config.js --watch --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
