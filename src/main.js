@@ -3,6 +3,8 @@
 
     require('./styles.scss');
 
+    require('lodash');
+
     class WebpackStarter {
         static Display(message) {
             document.write(message);
