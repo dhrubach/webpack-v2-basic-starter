@@ -1,3 +1,16 @@
 {
-    "presets": ["env"]
+    "presets": [
+        [
+            "env", // babel-preset-env --> automatically determines the plugins necessary based on environments
+            {
+                "loose": true,
+                "modules": false // don't want babel to transform ES2015 modules. webpack will take care of that
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "transform-runtime"
+        ] // babel-plugin-transform-runtime --> http://babeljs.io/docs/plugins/transform-runtime/#technical-details
+    ]
 }

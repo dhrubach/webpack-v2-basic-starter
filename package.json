@@ -6,9 +6,9 @@
   "scripts": {
     "rimraf": "./node_modules/.bin/rimraf",
     "webpack": "./node_modules/.bin/webpack",
-    "build": "npm run rimraf -- dist && npm run webpack -- --colors --progress",
-    "watch": "npm run build -- --watch",
-    "dev-server": "./node_modules/.bin/webpack-dev-server.cmd --debug --config ./webpack.config.js --watch --colors",
+    "build": "npm run rimraf -- dist && npm run webpack -- --colors --progress --verbose",
+    "build:watch": "npm run build -- --watch",
+    "build:server": "./node_modules/.bin/webpack-dev-server.cmd --debug --config ./webpack.config.js --watch --colors",
     "production": "cross-env NODE_ENV=production && npm run build"
   },
   "keywords": [
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/node": "^8.0.3",
     "@types/webpack": "^3.0.0",
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.4.0",
