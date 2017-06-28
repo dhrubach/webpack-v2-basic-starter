@@ -1,0 +1,28 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "alwaysStrict": true,
+		"allowJs": true,
+		"checkJs": true,
+		"noImplicitAny": false,
+        "module": "es2015",
+        "target": "es2015",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "skipLibCheck": true,
+		"typeRoots": [
+			"node_modules/@types"
+		]
+    },
+	"exclude": [
+		"node_modules",
+		"dist",
+		"./webpack.config.js"
+	]
+}

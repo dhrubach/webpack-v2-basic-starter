@@ -1,16 +1,22 @@
-(() => {
-    'use strict';
 
-    require('./styles.scss');
+'use strict';
 
-    require('lodash');
+//require('./styles.scss');
 
-    class WebpackStarter {
-        static Display(message) {
-            document.write(message);
-        }  
-    }
+require('lodash');
 
-    WebpackStarter.Display('webpack with babel-loader for ES6 support..');
+import { Team } from './team';
 
-})();
+class WebpackStarter {
+
+	constructor() {
+		const team = new Team();
+		const developers = team.getDevelopers();
+	}
+
+	static Display(message) {
+		document.write(message);
+	}
+}
+
+WebpackStarter.Display('webpack with babel-loader for ES6 support..');

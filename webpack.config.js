@@ -15,6 +15,24 @@ let config = {
     },
     module: {
         rules: [
+			{
+				test: /\.ts$/,
+				exclude: /node_modules/,
+				use: [
+					{ loader: 'babel-loader'},
+					{ loader: 'ts-loader'},
+				],
+			},
+			{
+				test: /\.ts$/,
+				exclude: /node_modules/,
+				enforce: 'pre',
+				loader: 'tslint-loader',
+				options: {
+					formattersDirectory: 'node_modules/custom-tslint-formatters/formatters',
+					formatter: 'grouped'
+				}
+			},
             {
                 test: /\.js$/,
                 exclude: /node_modules/,

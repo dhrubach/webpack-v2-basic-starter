@@ -6,7 +6,7 @@
   "scripts": {
     "rimraf": "./node_modules/.bin/rimraf",
     "webpack": "./node_modules/.bin/webpack",
-    "build": "npm run rimraf -- dist && npm run webpack -- --colors --progress --verbose",
+    "build": "npm run rimraf -- dist && npm run webpack -- --colors --progress --verbose --display-error-details",
     "build:watch": "npm run build -- --watch",
     "build:server": "./node_modules/.bin/webpack-dev-server.cmd --debug --config ./webpack.config.js --watch --colors",
     "production": "cross-env NODE_ENV=production && npm run build"
@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.4.0",
     "cross-env": "^4.0.0",
     "css-loader": "^0.28.1",
+    "custom-tslint-formatters": "^2.1.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "html-webpack-plugin": "^2.29.0",
     "inline-chunk-manifest-html-webpack-plugin": "^1.1.1",
