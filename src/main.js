@@ -1,7 +1,7 @@
 
 'use strict';
 
-//require('./styles.scss');
+require('./styles.scss');
 
 require('lodash');
 
